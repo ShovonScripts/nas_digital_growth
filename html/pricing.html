@@ -1,0 +1,503 @@
+<!doctype html>
+<html lang="en">
+
+<!-- =================================================================
+     HEAD SECTION: Contains metadata, page title, and links to stylesheets.
+     ================================================================= -->
+<head>
+  <!-- Basic Metadata -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- Page Title (Specific to the Pricing Page) -->
+  <title>Pricing Tiers | Nas Digital Growth</title>
+  
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/png" href="../assets/images/logos/favicon.svg" />
+  
+  <!-- Stylesheet Dependencies -->
+  <!-- Owl Carousel for sliders/carousels -->
+  <link rel="stylesheet" href="../assets/libs/owl.carousel/dist/assets/owl.carousel.min.css">
+  <!-- AOS (Animate on Scroll) for scroll animations -->
+  <link rel="stylesheet" href="../assets/libs/aos-master/dist/aos.css">
+  <!-- Main Custom Stylesheet for the website -->
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+
+  <!-- ===============================================================
+       INLINE CSS: Custom styles specifically for enhancing this pricing page.
+       =============================================================== -->
+  <style>
+    /* Style to visually highlight the "Most Popular" pricing plan */
+    .pricing-section .card.popular-plan {
+      border: 2px solid var(--bs-primary);
+      transform: scale(1.03); /* Slightly enlarges the card to make it stand out */
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Smooth transition for button text on hover */
+    .card .btn-text {
+      transition: all 0.3s ease-in-out;
+    }
+    
+    /* Subtle animation for button text on card hover */
+    .card:hover .btn-text {
+      transform: translateX(-5px);
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- =================================================================
+       HEADER SECTION: A fixed-top navigation bar for the website.
+       ================================================================= -->
+  <header class="header border-4 border-primary border-top position-fixed start-0 top-0 w-100">
+    <div class="container">
+      <!-- Header wrapper for flexbox layout -->
+      <div class="header-wrapper d-flex align-items-center justify-content-between">
+        
+        <!-- Logo -->
+        <div class="logo">
+          <!-- White logo for dark/video backgrounds -->
+          <a href="index.html" class="logo-white">
+            <img src="../assets/images/logos/logo-white.svg" alt="Nas Digital Growth Logo" class="img-fluid">
+          </a>
+          <!-- Dark logo for light backgrounds -->
+          <a href="index.html" class="logo-dark">
+            <img src="../assets/images/logos/logo-dark.svg" alt="Nas Digital Growth Logo" class="img-fluid">
+          </a>
+        </div>
+        
+        <!-- Right-side elements: Menu toggle -->
+        <div class="d-flex align-items-center gap-4">
+
+          <!-- Bootstrap Dropdown for the mobile/collapsible menu -->
+          <div class="btn-group">
+            <!-- The hamburger icon button that triggers the dropdown -->
+            <button
+              class="btn btn-secondary toggle-menu round-45 p-2 d-flex align-items-center justify-content-center bg-white rounded-circle"
+              type="button" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
+              <iconify-icon icon="solar:hamburger-menu-line-duotone" class="menu-icon fs-8 text-dark"></iconify-icon>
+            </button>
+            
+            <!-- The dropdown menu content -->
+            <ul class="dropdown-menu dropdown-menu-end p-4">
+              <div class="d-flex flex-column gap-6">
+                <!-- Menu Header -->
+                <div class="hstack justify-content-between border-bottom pb-6">
+                  <p class="mb-0 fs-5 text-dark">Menu</p>
+                  <button type="button" class="btn-close opacity-75" aria-label="Close"></button>
+                </div>
+                
+                <!-- Menu Body -->
+                <div class="d-flex flex-column gap-3">
+
+                  <!-- Primary Navigation Links -->
+                  <ul class="header-menu list-unstyled mb-0 d-flex flex-column gap-2">
+                    <li class="header-item"><a href="index.html" class="header-link hstack gap-2 fs-7 fw-bold text-dark"><img src="../assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20" class="img-fluid animate-spin">Home</a></li>
+                    <li class="header-item"><a href="program.html" class="header-link hstack gap-2 fs-7 fw-bold text-dark"><img src="../assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20" class="img-fluid animate-spin">The Program</a></li>
+                    <li class="header-item"><a href="https://www.nasdigitalgrowth.com/" target="_blank" class="header-link hstack gap-2 fs-7 fw-bold text-dark"><img src="../assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20" class="img-fluid animate-spin">Blueprint</a></li>
+                    <!-- `aria-current="page"` and `active` class indicate this is the current page for accessibility and styling -->
+                    <li class="header-item"><a href="pricing.html" aria-current="page" class="header-link active hstack gap-2 fs-7 fw-bold text-dark"><img src="../assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20" class="img-fluid animate-spin">Pricing</a></li>
+                    <li class="header-item"><a href="partners.html" class="header-link hstack gap-2 fs-7 fw-bold text-dark"><img src="../assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20" class="img-fluid animate-spin">Partners</a></li>
+                    <li class="header-item"><a href="about-us.html" class="header-link hstack gap-2 fs-7 fw-bold text-dark"><img src="../assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20" class="img-fluid animate-spin">About Us</a></li>
+                    <li class="header-item"><a href="contact.html" class="header-link hstack gap-2 fs-7 fw-bold text-dark"><img src="../assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20" class="img-fluid animate-spin">Contact</a></li>
+                  </ul>
+                  <!-- End Primary Navigation Links -->
+
+                  <!-- Sign In / Sign Up Buttons -->
+                  <div class="hstack gap-3 mt-3">
+                    <a href="sign-in.html" class="btn btn-outline-light fs-6 bg-white px-3 py-2 text-dark w-50 hstack justify-content-center">Sign In</a>
+                    <a href="sign-up.html" class="btn btn-dark text-white fs-6 bg-dark px-3 py-2 w-50 hstack justify-content-center">Sign Up</a>
+                  </div>
+                </div>
+
+                <!-- Contact Info in Menu Footer -->
+                <div>
+                  <a class="text-dark" href="mailto:support@nasdigitalgrowth.com">support@nasdigitalgrowth.com</a>
+                  <p class="fs-8 text-dark fw-bold mb-0">Scotland, UK</p>
+                </div>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Header End -->
+
+  <!-- =================================================================
+       PAGE WRAPPER: Main container for all page content below the header.
+       ================================================================= -->
+  <div class="page-wrapper overflow-hidden">
+
+    <!-- ===============================================================
+         BANNER SECTION: The hero section, perfected for a pricing page.
+         =============================================================== -->
+    <section class="banner-section position-relative d-flex align-items-center min-vh-100">
+      <!-- Background Video -->
+      <video class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover" autoplay muted loop playsinline>
+        <source src="../assets/images/backgrounds/banner-video-pricing.mp4" type="video/mp4" />
+      </video>
+      
+      <!-- Content Overlay -->
+      <div class="container">
+        <div class="d-flex flex-column gap-5 position-relative z-1" style="margin-top: 50px;">
+          <div class="row">
+            <div class="col-lg-8 col-xl-7">
+              <div class="d-flex flex-column gap-4" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+                <!-- Page Identifier Badge -->
+                <div class="hstack gap-3">
+                    <img src="../assets/images/svgs/primary-leaf.svg" alt="Nas Digital Growth Leaf Icon" width="30" class="img-fluid animate-spin">
+                    <span class="badge text-bg-primary fs-6">Pricing Plans</span>
+                </div>
+                <!-- Compelling Headline -->
+                <h1 class="mb-0 fs-16 text-white lh-1">Your Journey Starts Here</h1>
+                <!-- Persuasive Sub-headline reinforcing key value propositions -->
+                <p class="mb-0 text-white fs-5 text-opacity-70 col-xl-10">
+                  Transparent, one-time investments for lifetime access to our proven MRR programs. Choose the tier that best fits your ambition. No hidden fees, ever.
+                </p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Calls-to-Action -->
+          <div class="d-flex flex-wrap align-items-center gap-4" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+            <!-- Primary CTA: Scrolls down to the pricing section -->
+            <a href="#pricing-section" class="btn btn-primary btn-lg">
+                <span class="btn-text">View Program Tiers</span>
+                <iconify-icon icon="lucide:arrow-down" class="btn-icon bg-white text-dark round-52 rounded-circle hstack justify-content-center fs-7 shadow-sm"></iconify-icon>
+            </a>
+            <!-- Secondary CTA: Direct contact for questions -->
+            <a href="https://wa.me/447449728800?text=I'm%20interested%20in%20the%20pricing%20plans%20and%20would%20like%20more%20information." class="hstack gap-3 text-white link-hover" target="_blank">
+                <iconify-icon icon="ri:whatsapp-line" class="fs-5"></iconify-icon>
+                <span class="fw-bold">Have Questions? Chat with Us</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Banner Section End -->
+    
+    <!-- ===============================================================
+         PROGRAM TIERS / PRICING SECTION: The main content of the page.
+         Note: Contains a duplicate 'pricing-section' class which could be consolidated, but is left as-is per instructions.
+         The ID `pricing-section` is the anchor target for the banner CTA.
+         =============================================================== -->
+    <section class="pricing-section py-5 py-lg-11 py-xl-12 bg-light-gray" id="pricing-section">
+      <div class="container">
+        <div class="d-flex flex-column gap-5 gap-xl-10">
+          <div class="d-flex flex-column gap-5 gap-xl-11">
+            <!-- Section Header -->
+            <div class="row gap-7 gap-xl-0">
+              <div class="col-xl-4 col-xxl-4">
+                <div class="d-flex align-items-center gap-7 py-2" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">
+                  <span class="round-36 flex-shrink-0 text-dark rounded-circle bg-primary hstack justify-content-center fw-medium">01</span>
+                  <hr class="border-line bg-white">
+                  <span class="badge text-bg-dark">Program Tiers</span>
+                </div>
+              </div>
+              <div class="col-xl-8 col-xxl-7">
+                <div class="row">
+                  <div class="col-xxl-8">
+                    <div class="d-flex flex-column gap-6" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+                      <h2 class="mb-0">Start Your MRR Journey Today</h2>
+                      <p class="fs-5 mb-0 text-opacity-70">Choose the perfect entry point to financial freedom with our tiered MRR program - each level unlocks greater earning potential.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Pricing Cards Row -->
+            <div class="row">
+
+              <!-- Pricing Card 1: LaunchPad -->
+              <div class="col-lg-6 col-xl-4 mb-7 mb-xl-0 d-flex align-items-stretch">
+                <div class="card w-100" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+                  <div class="card-body p-7 p-xxl-5 d-flex flex-column gap-8">
+                    <!-- Card Header: Title & Price -->
+                    <div class="d-flex flex-column gap-6">
+                      <h5 class="mb-0 fw-medium">LaunchPad</h5>
+                      <div class="hstack gap-2"><h3 class="mb-0">$100</h3><p class="mb-0">one-time</p></div>
+                      <p class="mb-0">Perfect for beginners starting their MRR business journey.</p>
+                    </div>
+                    <!-- Card Body: Features List -->
+                    <div class="pt-8 border-top d-flex flex-column gap-6">
+                      <h6 class="mb-0 fw-normal">What's Included:</h6>
+                      <ul class="list-unstyled d-flex flex-column gap-3 mb-0">
+                        <li class="hstack gap-3"><span class="round-32 rounded-circle bg-primary flex-shrink-0 hstack justify-content-center"><iconify-icon icon="lucide:check" class="fs-6 text-dark"></iconify-icon></span><h6 class="mb-0 fw-normal">Basic MRR Training</h6></li>
+                        <li class="hstack gap-3"><span class="round-32 rounded-circle bg-primary flex-shrink-0 hstack justify-content-center"><iconify-icon icon="lucide:check" class="fs-6 text-dark"></iconify-icon></span><h6 class="mb-0 fw-normal">Resell Rights for Tier 1</h6></li>
+                        <li class="hstack gap-3"><span class="round-32 rounded-circle bg-primary flex-shrink-0 hstack justify-content-center"><iconify-icon icon="lucide:check" class="fs-6 text-dark"></iconify-icon></span><h6 class="mb-0 fw-normal">Community Access</h6></li>
+                        <li class="hstack gap-3"><span class="round-32 rounded-circle bg-primary flex-shrink-0 hstack justify-content-center"><iconify-icon icon="lucide:check" class="fs-6 text-dark"></iconify-icon></span><h6 class="mb-0 fw-normal">Weekly Q&A Sessions</h6></li>
+                      </ul>
+                    </div>
+                    <!-- Card Footer: CTA Button -->
+                    <a href="https://wa.me/447449728800?text=I'm%20interested%20in%20the%20LaunchPad%20Program%20(%24100)%20and%20would%20like%20to%20get%20started%20with%20basic%20MRR%20training." class="btn w-100 justify-content-center">
+                      <span class="btn-text">Get Started</span>
+                      <iconify-icon icon="lucide:arrow-up-right" class="btn-icon bg-white text-dark round-52 rounded-circle hstack justify-content-center fs-7 shadow-sm"></iconify-icon>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Pricing Card 2: Passive Daily Pay (Most Popular) -->
+              <div class="col-lg-6 col-xl-4 mb-7 mb-xl-0 d-flex align-items-stretch">
+                <!-- NOTE: This card has the `popular-plan` class, which is styled by the inline CSS in the <head> -->
+                <div class="card w-100 popular-plan" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                  <div class="card-body p-7 p-xxl-5 d-flex flex-column gap-8">
+                    <!-- Card Header: Title & Price -->
+                    <div class="d-flex flex-column gap-6">
+                      <div class="hstack gap-3"><h5 class="mb-0 fw-medium">Passive Daily Pay</h5><span class="badge text-bg-dark hstack gap-2"><iconify-icon icon="lucide:flame" class="fs-5"></iconify-icon>Most popular</span></div>
+                      <div class="hstack gap-2"><h3 class="mb-0 text-opacity-50 text-dark"><del>$500</del></h3><h3 class="mb-0">$300</h3><p class="mb-0">one-time</p></div>
+                      <p class="mb-0">Our best value package for serious income growth.</p>
+                    </div>
+                    <!-- Card Body: Features List -->
+                    <div class="pt-8 border-top d-flex flex-column gap-6">
+                      <h6 class="mb-0 fw-normal">What's Included:</h6>
+                      <ul class="list-unstyled d-flex flex-column gap-3 mb-0">
+                        <li class="hstack gap-3"><span class="round-32 rounded-circle bg-primary flex-shrink-0 hstack justify-content-center"><iconify-icon icon="lucide:check" class="fs-6 text-dark"></iconify-icon></span><h6 class="mb-0 fw-normal">Everything in LaunchPad</h6></li>
+                        <li class="hstack gap-3"><span class="round-32 rounded-circle bg-primary flex-shrink-0 hstack justify-content-center"><iconify-icon icon="lucide:check" class="fs-6 text-dark"></iconify-icon></span><h6 class="mb-0 fw-normal">Automated Sales Funnels</h6></li>
+                        <li class="hstack gap-3"><span class="round-32 rounded-circle bg-primary flex-shrink-0 hstack justify-content-center"><iconify-icon icon="lucide:check" class="fs-6 text-dark"></iconify-icon></span><h6 class="mb-0 fw-normal">Faceless Marketing System</h6></li>
+                        <li class="hstack gap-3"><span class="round-32 rounded-circle bg-primary flex-shrink-0 hstack justify-content-center"><iconify-icon icon="lucide:check" class="fs-6 text-dark"></iconify-icon></span><h6 class="mb-0 fw-normal">Resell Rights for Tiers 1-2</h6></li>
+                      </ul>
+                    </div>
+                    <!-- Card Footer: CTA Button -->
+                    <a href="https://wa.me/447449728800?text=I%20want%20to%20join%20the%20Passive%20Daily%20Pay%20Program%20(%24300)%20for%20automated%20sales%20funnels%20and%20faceless%20marketing%20system." class="btn w-100 justify-content-center">
+                      <span class="btn-text">Join Now</span>
+                      <iconify-icon icon="lucide:arrow-up-right" class="btn-icon bg-white text-dark round-52 rounded-circle hstack justify-content-center fs-7 shadow-sm"></iconify-icon>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Pricing Card 3: Legacy Builders -->
+              <div class="col-lg-6 col-xl-4 mb-7 mb-xl-0 d-flex align-items-stretch">
+                <div class="card w-100" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+                  <div class="card-body p-7 p-xxl-5 d-flex flex-column gap-8">
+                    <!-- Card Header: Title & Price -->
+                    <div class="d-flex flex-column gap-6">
+                      <h5 class="mb-0 fw-medium">Legacy Builders</h5>
+                      <div class="hstack gap-2"><h3 class="mb-0">$900</h3><p class="mb-0">one-time</p></div>
+                      <p class="mb-0">Complete system with maximum earning potential.</p>
+                    </div>
+                    <!-- Card Body: Features List -->
+                    <div class="pt-8 border-top d-flex flex-column gap-6">
+                      <h6 class="mb-0 fw-normal">What's Included:</h6>
+                      <ul class="list-unstyled d-flex flex-column gap-3 mb-0">
+                        <li class="hstack gap-3"><span class="round-32 rounded-circle bg-primary flex-shrink-0 hstack justify-content-center"><iconify-icon icon="lucide:check" class="fs-6 text-dark"></iconify-icon></span><h6 class="mb-0 fw-normal">All Previous Tier Benefits</h6></li>
+                        <li class="hstack gap-3"><span class="round-32 rounded-circle bg-primary flex-shrink-0 hstack justify-content-center"><iconify-icon icon="lucide:check" class="fs-6 text-dark"></iconify-icon></span><h6 class="mb-0 fw-normal">1-on-1 Coaching Sessions</h6></li>
+                        <li class="hstack gap-3"><span class="round-32 rounded-circle bg-primary flex-shrink-0 hstack justify-content-center"><iconify-icon icon="lucide:check" class="fs-6 text-dark"></iconify-icon></span><h6 class="mb-0 fw-normal">Resell Rights for All Tiers</h6></li>
+                        <li class="hstack gap-3"><span class="round-32 rounded-circle bg-primary flex-shrink-0 hstack justify-content-center"><iconify-icon icon="lucide:check" class="fs-6 text-dark"></iconify-icon></span><h6 class="mb-0 fw-normal">Priority Support & Mentorship</h6></li>
+                      </ul>
+                    </div>
+                    <!-- Card Footer: CTA Button -->
+                    <a href="https://wa.me/447449728800?text=I'm%20ready%20to%20build%20my%20legacy%20with%20the%20%24900%20program!%20Please%20send%20me%20details%20about%201-on-1%20coaching%20and%20full%20resell%20rights." class="btn w-100 justify-content-center">
+                      <span class="btn-text">Build Your Legacy</span>
+                      <iconify-icon icon="lucide:arrow-up-right" class="btn-icon bg-white text-dark round-52 rounded-circle hstack justify-content-center fs-7 shadow-sm"></iconify-icon>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Marquee / Scrolling Testimonial Logos -->
+          <div class="d-flex flex-column gap-8" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+            <p class="fs-5 mb-0 text-center text-dark">Join 50,000+ members who transformed their lives</p>
+            <div class="marquee w-100 d-flex align-items-center overflow-hidden">
+              <div class="marquee-content d-flex align-items-center gap-8">
+                <div class="marquee-tag hstack justify-content-center"><img src="../assets/images/pricing/testimonial-1.svg" alt="Member success" class="img-fluid"></div>
+                <div class="marquee-tag hstack justify-content-center"><img src="../assets/images/pricing/testimonial-2.svg" alt="MRR results" class="img-fluid"></div>
+                <div class="marquee-tag hstack justify-content-center"><img src="../assets/images/pricing/testimonial-3.svg" alt="Community" class="img-fluid"></div>
+                <div class="marquee-tag hstack justify-content-center"><img src="../assets/images/pricing/testimonial-4.svg" alt="Coaching" class="img-fluid"></div>
+                <div class="marquee-tag hstack justify-content-center"><img src="../assets/images/pricing/testimonial-5.svg" alt="Training" class="img-fluid"></div>
+                <!-- Duplicated for seamless loop effect -->
+                <div class="marquee-tag hstack justify-content-center"><img src="../assets/images/pricing/testimonial-1.svg" alt="Member success" class="img-fluid"></div>
+                <div class="marquee-tag hstack justify-content-center"><img src="../assets/images/pricing/testimonial-2.svg" alt="MRR results" class="img-fluid"></div>
+                <div class="marquee-tag hstack justify-content-center"><img src="../assets/images/pricing/testimonial-3.svg" alt="Community" class="img-fluid"></div>
+                <div class="marquee-tag hstack justify-content-center"><img src="../assets/images/pricing/testimonial-4.svg" alt="Coaching" class="img-fluid"></div>
+                <div class="marquee-tag hstack justify-content-center"><img src="../assets/images/pricing/testimonial-5.svg" alt="Training" class="img-fluid"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Program Tiers Section End -->
+    
+    
+    <!-- ===============================================================
+         FAQ SECTION: Accordion-style Frequently Asked Questions with a white background.
+         =============================================================== -->
+    <section class="faq bg-white py-5 py-lg-11 py-xl-12">
+      <div class="container">
+        <div class="d-flex flex-column gap-5 gap-xl-11">
+          <!-- Section Header -->
+          <div class="row gap-7 gap-xl-0">
+            <div class="col-xl-4 col-xxl-4">
+              <div class="d-flex align-items-center gap-7 py-2" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">
+                <span class="round-36 flex-shrink-0 text-dark rounded-circle bg-primary hstack justify-content-center fw-medium">02</span>
+                <hr class="border-line bg-dark"> <!-- Border color changed to be visible on white bg -->
+                <span class="badge text-bg-dark">FAQs</span>
+              </div>
+            </div>
+            <div class="col-xl-8 col-xxl-7">
+              <div class="row">
+                <div class="col-xxl-9">
+                  <div class="d-flex flex-column gap-6" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+                    <h2 class="mb-0">Frequently asked questions</h2>
+                    <p class="fs-5 mb-0 text-opacity-70">Get answers about our Master Resell Rights program, training system, and how you can start earning quickly with our proven methods.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Accordion Component -->
+          <div class="row justify-content-end">
+            <div class="col-xl-8">
+              <div class="accordion accordion-flush" id="accordionFlushExample" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                <!-- FAQ Item 1 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed fs-8 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">Is Master Resell Rights (MRR) legal?</button>
+                  </h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body pt-0 fs-5 text-dark">Absolutely! MRR is a legitimate licensing model for digital products. We provide full legal documentation with all our program tiers, allowing you to resell our training legally while keeping 100% of profits.</div>
+                  </div>
+                </div>
+                <!-- FAQ Item 2 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed fs-8 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">How quickly can I start earning?</button>
+                  </h2>
+                  <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body pt-0 fs-5 text-dark">Many members see their first sales within days. With our done-for-you sales funnels ($39 setup) and training, you can be up and running immediately. Your results will depend on how actively you implement our strategies.</div>
+                  </div>
+                </div>
+                <!-- FAQ Item 3 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed fs-8 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">Do I need marketing experience?</button>
+                  </h2>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body pt-0 fs-5 text-dark">Not at all! Our training is designed for complete beginners. We teach simple "faceless marketing" methods that don't require showing your face or prior experience. Plus, you'll have access to our 50,000+ member community for support.</div>
+                  </div>
+                </div>
+                <!-- FAQ Item 4 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed fs-8 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">What's included in each program tier?</button>
+                  </h2>
+                  <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body pt-0 fs-5 text-dark">We offer 4 tiers: LaunchPad ($100), Passive Daily Pay ($300), Digital Mastery ($600), and Legacy Builders ($900). Higher tiers include more advanced training and the rights to resell more products. You must own a tier to earn from it.</div>
+                  </div>
+                </div>
+                <!-- FAQ Item 5 -->
+                <div class="accordion-item border-bottom">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed fs-8 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">How does the community support work?</button>
+                  </h2>
+                  <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body pt-0 fs-5 text-dark">You'll get immediate access to our private Digital Growth Community with 50,000+ members. We host weekly Zoom calls with six-figure earners, and Mr. Nas provides direct mentorship. It's an invaluable resource for getting answers and staying motivated.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FAQ Section End -->
+
+    <!-- =================================================================
+         FOOTER SECTION: Contains contact info, quick links, and social media.
+         ================================================================= -->
+    <footer class="footer bg-dark py-5 py-lg-11 py-xl-12">
+      <div class="container">
+        <div class="row gy-5">
+
+          <!-- Column 1: Brand Info & Contact -->
+          <div class="col-lg-5 col-md-12">
+            <div class="d-flex flex-column gap-4 pe-xl-5">
+              <h2 class="mb-0 text-white">Ready for Financial Freedom?</h2>
+              <div class="d-flex flex-column gap-2">
+                <a href="mailto:support@nasdigitalgrowth.com" class="link-hover hstack gap-3 text-white fs-5"><iconify-icon icon="lucide:mail" class="fs-7 text-primary"></iconify-icon>support@nasdigitalgrowth.com</a>
+                <div class="hstack gap-3 text-white fs-5"><iconify-icon icon="lucide:map-pin" class="fs-7 text-primary"></iconify-icon><span>Scotland, United Kingdom</span></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Column 2: Quick Links -->
+          <div class="col-lg-2 col-md-3 col-6">
+            <h5 class="mb-4 text-white">Quick Links</h5>
+            <ul class="footer-menu list-unstyled mb-0 d-flex flex-column gap-3">
+              <li><a class="link-hover fs-6 text-white text-opacity-70" href="index.html">Home</a></li>
+              <li><a class="link-hover fs-6 text-white text-opacity-70" href="program.html">The Program</a></li>
+              <li><a class="link-hover fs-6 text-white text-opacity-70" href="https://www.nasdigitalgrowth.com/" target="_blank">Blueprint</a></li>
+              <li><a class="link-hover fs-6 text-white text-opacity-70" href="pricing.html">Pricing</a></li>
+              <li><a class="link-hover fs-6 text-white text-opacity-70" href="partners.html">Partners</a></li>
+              <li><a class="link-hover fs-6 text-white text-opacity-70" href="about-us.html">About Us</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 3: Support & Legal Links -->
+          <div class="col-lg-2 col-md-3 col-6">
+            <h5 class="mb-4 text-white">Support</h5>
+            <ul class="footer-menu list-unstyled mb-0 d-flex flex-column gap-3">
+              <li><a class="link-hover fs-6 text-white text-opacity-70" href="contact.html">Contact Us</a></li>
+              <li><a class="link-hover fs-6 text-white text-opacity-70" href="terms-and-conditions.html">Terms & Conditions</a></li>
+              <li><a class="link-hover fs-6 text-white text-opacity-70" href="privacy-policy.html">Privacy Policy</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 4: Social Media Icons -->
+          <div class="col-lg-3 col-md-6">
+            <h5 class="mb-4 text-white">Follow Us</h5>
+            <div class="d-flex gap-3">
+              <a href="https://facebook.com/nasdigitalgrowth" target="_blank" class="text-white text-opacity-70 link-hover"><iconify-icon icon="ri:facebook-fill" class="fs-5"></iconify-icon></a>
+              <a href="https://instagram.com/nasdigitalgrowth" target="_blank" class="text-white text-opacity-70 link-hover"><iconify-icon icon="ri:instagram-line" class="fs-5"></iconify-icon></a>
+              <a href="https://tiktok.com/@nasdigitalgrowth" target="_blank" class="text-white text-opacity-70 link-hover"><iconify-icon icon="ri:tiktok-line" class="fs-5"></iconify-icon></a>
+              <a href="https://youtube.com/@nasdigitalgrowth" target="_blank" class="text-white text-opacity-70 link-hover"><iconify-icon icon="ri:youtube-line" class="fs-5"></iconify-icon></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom Bar with Copyright -->
+      <div class="footer-bottom-bar border-top border-white border-opacity-10 mt-5 mt-lg-11 mt-xl-12 py-4">
+        <div class="container text-center">
+          <p class="mb-0 text-white text-opacity-70">© 2025 Nas Digital Growth. Empowering financial freedom through digital entrepreneurship.</p>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer End -->
+    
+    <!-- =================================================================
+         FLOATING "SCROLL TO TOP" BUTTON
+         ================================================================= -->
+    <div class="get-template hstack gap-2">
+      <button class="btn bg-primary p-2 round-52 rounded-circle hstack justify-content-center flex-shrink-0" id="scrollToTopBtn">
+        <iconify-icon icon="lucide:arrow-up" class="fs-7 text-dark"></iconify-icon>
+      </button>
+    </div>
+
+  </div> <!-- End Page Wrapper -->
+
+  <!-- =================================================================
+       JAVASCRIPT LIBRARIES & PLUGINS: Placed at the end for faster page load.
+       ================================================================= -->
+  <!-- jQuery: A dependency for Bootstrap JS and other plugins. -->
+  <script src="../assets/libs/jquery/dist/jquery.min.js"></script>
+  <!-- Bootstrap JS Bundle: Includes Popper.js for tooltips and popovers. -->
+  <script src="../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Owl Carousel JS: Powers the carousels/sliders. -->
+  <script src="../assets/libs/owl.carousel/dist/owl.carousel.min.js"></script>
+  <!-- AOS JS: Handles animations on scroll. -->
+  <script src="../assets/libs/aos-master/dist/aos.js"></script>
+  <!-- Custom JS: Your main script file for initializing plugins and custom behaviors. -->
+  <script src="../assets/js/custom.js"></script>
+  <!-- Iconify JS: Renders the custom vector icons. -->
+  <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+
+</body>
+
+</html>

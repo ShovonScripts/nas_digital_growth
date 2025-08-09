@@ -1,0 +1,1286 @@
+<!doctype html>
+<html lang="en">
+
+<!-- =================================================================
+     HEAD SECTION: Contains metadata, page title, and links to stylesheets.
+     ================================================================= -->
+<head>
+  <!-- Basic Metadata -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- Page Title -->
+  <title>Nas Digital Growth</title>
+  
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/png" href="../assets/images/logos/favicon.svg" />
+  
+  <!-- Stylesheet Dependencies -->
+  <!-- Owl Carousel for sliders/carousels -->
+  <link rel="stylesheet" href="../assets/libs/owl.carousel/dist/assets/owl.carousel.min.css">
+  <!-- AOS (Animate on Scroll) for scroll animations -->
+  <link rel="stylesheet" href="../assets/libs/aos-master/dist/aos.css">
+  <!-- Main Custom Stylesheet for the website -->
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+</head>
+
+<body>
+
+<!-- =================================================================
+     HEADER SECTION: A fixed-top navigation bar for the website.
+     ================================================================= -->
+<header class="header border-4 border-primary border-top position-fixed start-0 top-0 w-100">
+    <div class="container">
+        <!-- Header wrapper for flexbox layout -->
+        <div class="header-wrapper d-flex align-items-center justify-content-between">
+            
+            <!-- Logo -->
+            <div class="logo">
+                <!-- White logo for dark/video backgrounds -->
+                <a href="index.html" class="logo-white">
+                    <img src="../assets/images/logos/logo-white.svg" alt="Nas Digital Growth Logo" class="img-fluid">
+                </a>
+                <!-- Dark logo for light backgrounds -->
+                <a href="index.html" class="logo-dark">
+                    <img src="../assets/images/logos/logo-dark.svg" alt="Nas Digital Growth Logo" class="img-fluid">
+                </a>
+            </div>
+            
+            <!-- Right-side elements: Menu toggle -->
+            <div class="d-flex align-items-center gap-4">
+
+                <!-- Bootstrap Dropdown for the mobile/collapsible menu -->
+                <div class="btn-group">
+                    <!-- The hamburger icon button that triggers the dropdown -->
+                    <button
+                        class="btn btn-secondary toggle-menu round-45 p-2 d-flex align-items-center justify-content-center bg-white rounded-circle"
+                        type="button" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
+                        <iconify-icon icon="solar:hamburger-menu-line-duotone"
+                            class="menu-icon fs-8 text-dark"></iconify-icon>
+                    </button>
+                    
+                    <!-- The dropdown menu content -->
+                    <ul class="dropdown-menu dropdown-menu-end p-4">
+                        <div class="d-flex flex-column gap-6">
+                            <!-- Menu Header -->
+                            <div class="hstack justify-content-between border-bottom pb-6">
+                                <p class="mb-0 fs-5 text-dark">Menu</p>
+                                <button type="button" class="btn-close opacity-75" aria-label="Close"></button>
+                            </div>
+                            
+                            <!-- Menu Body -->
+                            <div class="d-flex flex-column gap-3">
+                                
+                              <!-- Primary Navigation Links -->
+                                <ul class="header-menu list-unstyled mb-0 d-flex flex-column gap-2">
+                                    <li class="header-item">
+                                        <a href="index.html" aria-current="true"
+                                            class="header-link active hstack gap-2 fs-7 fw-bold text-dark"><img
+                                                src="../assets/images/svgs/secondary-leaf.svg" alt="" width="20"
+                                                height="20" class="img-fluid animate-spin">Home</a>
+                                    </li>
+                                    <li class="header-item">
+                                        <a href="program.html" class="header-link hstack gap-2 fs-7 fw-bold text-dark"><img
+                                                src="../assets/images/svgs/secondary-leaf.svg" alt="" width="20"
+                                                height="20" class="img-fluid animate-spin">The Program</a>
+                                    </li>
+                                    <li class="header-item">
+                                        <a href="https://www.nasdigitalgrowth.com/" target="_blank" class="header-link hstack gap-2 fs-7 fw-bold text-dark"><img
+                                                src="../assets/images/svgs/secondary-leaf.svg" alt="" width="20"
+                                                height="20" class="img-fluid animate-spin">Blueprint</a>
+                                    </li>
+                                    <li class="header-item">
+                                        <a href="pricing.html" class="header-link hstack gap-2 fs-7 fw-bold text-dark"><img
+                                                src="../assets/images/svgs/secondary-leaf.svg" alt="" width="20"
+                                                height="20" class="img-fluid animate-spin">Pricing</a>
+                                    </li>
+                                    <li class="header-item">
+                                        <a href="partners.html" class="header-link hstack gap-2 fs-7 fw-bold text-dark"><img
+                                                src="../assets/images/svgs/secondary-leaf.svg" alt="" width="20"
+                                                height="20" class="img-fluid animate-spin">Partners</a>
+                                    </li>
+                                    <li class="header-item">
+                                        <a href="about-us.html" class="header-link hstack gap-2 fs-7 fw-bold text-dark"><img
+                                                src="../assets/images/svgs/secondary-leaf.svg" alt="" width="20"
+                                                height="20" class="img-fluid animate-spin">About Us</a>
+                                    </li>
+                                    <li class="header-item">
+                                        <a href="contact.html" class="header-link hstack gap-2 fs-7 fw-bold text-dark"><img
+                                                src="../assets/images/svgs/secondary-leaf.svg" alt="" width="20"
+                                                height="20" class="img-fluid animate-spin">Contact</a>
+                                    </li>
+                                </ul>
+                                <!-- End Primary Navigation Links -->
+
+                                <!-- Sign In / Sign Up Buttons -->
+                                <div class="hstack gap-3 mt-3">
+                                    <a href="sign-in.html"
+                                        class="btn btn-outline-light fs-6 bg-white px-3 py-2 text-dark w-50 hstack justify-content-center">Sign
+                                        In</a>
+                                    <a href="sign-up.html"
+                                        class="btn btn-dark text-white fs-6 bg-dark px-3 py-2 w-50 hstack justify-content-center">Sign
+                                        Up</a>
+                                </div>
+                            </div>
+
+                            <!-- Contact Info in Menu Footer -->
+                            <div>
+                                <a class="text-dark"
+                                    href="mailto:support@nasdigitalgrowth.com">support@nasdigitalgrowth.com</a>
+                                <p class="fs-8 text-dark fw-bold mb-0">Scotland, UK</p>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- Header End -->
+
+
+<!-- =================================================================
+     PAGE WRAPPER: Main container for all page content below the header.
+     ================================================================= -->
+<div class="page-wrapper overflow-hidden">
+
+  <!-- ===============================================================
+       BANNER SECTION: The hero section with a background video.
+       =============================================================== -->
+  <section class="banner-section position-relative d-flex align-items-center min-vh-100">
+    <!-- Background Video -->
+    <video class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover" autoplay muted loop playsinline>
+      <source src="../assets/images/backgrounds/banner-video.mp4" type="video/mp4" />
+    </video>
+    <!-- Content Overlay -->
+    <div class="container">
+      <div class="d-flex flex-column gap-4 position-relative z-1" style="margin-top: -50px;">
+        <div class="row align-items-center">
+          <div class="col-xl-4">
+            <!-- Tagline with AOS fade-up animation -->
+            <div class="d-flex align-items-center gap-4" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+              <img src="../assets/images/svgs/primary-leaf.svg" alt="" class="img-fluid animate-spin">
+              <p class="mb-0 text-white fs-5 text-opacity-70">We help you build <span class="text-primary">passive income streams</span> through Master Resell Rights that create financial freedom.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Main Headline and Call-to-Action -->
+        <div class="d-flex align-items-end gap-3" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+          <h1 class="mb-0 fs-16 text-white lh-1">Nas Digital Growth</h1>
+          <a href="https://wa.me/447449728800?text=I'm%20interested%20in%20the%20Legacy%20Builders%20Program%20and%20would%20like%20more%20information%20about%20how%20to%20get%20started." class="p-1 ps-7 bg-primary rounded-pill" target="_blank">
+            <span class="bg-white round-52 rounded-circle d-flex align-items-center justify-content-center">
+              <iconify-icon icon="lucide:arrow-up-right" class="fs-8 text-dark"></iconify-icon>
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Banner Section End -->
+
+
+  <!-- ===============================================================
+       RESULTS & IMPACT SECTION: Displays key statistics and facts.
+       =============================================================== -->
+  <section class="stats-facts py-5 py-lg-11 py-xl-12 position-relative overflow-hidden">
+    <div class="container">
+      <!-- Using Bootstrap grid system for layout -->
+      <div class="row gap-7 gap-xl-0">
+        <!-- Left Column: Section Header -->
+        <div class="col-xl-4 col-xxl-4">
+          <div class="d-flex align-items-center gap-7 py-2" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">
+            <span class="round-36 flex-shrink-0 text-dark rounded-circle bg-primary hstack justify-content-center fw-medium">01</span>
+            <hr class="border-line">
+            <span class="badge text-bg-dark">Results & Impact</span>
+          </div>
+        </div>
+        <!-- Right Column: Content -->
+        <div class="col-xl-8 col-xxl-7">
+          <div class="d-flex flex-column gap-9">
+            <!-- Introductory Text -->
+            <div class="row">
+              <div class="col-xxl-8">
+                <div class="d-flex flex-column gap-6" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+                  <h2 class="mb-0">Proven MRR system that delivers real results.</h2>
+                  <p class="fs-5 mb-0">When choosing an MRR program, it's essential to consider its track record, training quality, and the earning potential for your business.</p>
+                </div>
+              </div>
+            </div>
+            <!-- Statistics Row -->
+            <div class="row">
+              <div class="col-md-6 col-lg-4 mb-7 mb-lg-0">
+                <div class="d-flex flex-column gap-6 pt-9 border-top" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                  <h2 class="mb-0 fs-14"><span class="count" data-target="50">50</span>K+</h2>
+                  <p class="mb-0">Members in our digital growth community</p>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4 mb-7 mb-lg-0">
+                <div class="d-flex flex-column gap-6 pt-9 border-top" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+                  <h2 class="mb-0 fs-14">100<span>%</span></h2>
+                  <p class="mb-0">Profit retention with MRR license</p>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4 mb-7 mb-lg-0">
+                <div class="d-flex flex-column gap-6 pt-9 border-top" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+                  <h2 class="mb-0 fs-14">24<span>/7</span></h2>
+                  <p class="mb-0">Automated sales funnel performance</p>
+                </div>
+              </div>
+            </div>
+            <!-- Call-to-Action Button -->
+            <a href="https://www.nasdigitalgrowth.com" class="btn" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
+              <span class="btn-text">Get Started</span>
+              <iconify-icon icon="lucide:arrow-up-right" class="btn-icon bg-white text-dark round-52 rounded-circle hstack justify-content-center fs-7 shadow-sm"></iconify-icon>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Decorative background element -->
+    <div class="position-absolute bottom-0 start-0" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000">
+      <img src="../assets/images/backgrounds/stats-facts-bg.svg" alt="" class="img-fluid">
+    </div>
+  </section>
+  <!-- Results & Impact Section End -->
+
+
+  <!-- ===============================================================
+       MEMBER SUCCESS STORIES SECTION (Carousel): Displays portfolio items.
+       =============================================================== -->
+  <section class="featured-projects py-5 py-lg-11 py-xl-12 bg-light-gray">
+    <div class="d-flex flex-column gap-5 gap-xl-11">
+      <!-- Section Header -->
+      <div class="container">
+        <div class="row gap-7 gap-xl-0">
+          <div class="col-xl-4 col-xxl-4">
+            <div class="d-flex align-items-center gap-7 py-2" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">
+              <span class="round-36 flex-shrink-0 text-dark rounded-circle bg-primary hstack justify-content-center fw-medium">02</span>
+              <hr class="border-line">
+              <span class="badge text-bg-dark">Success Stories</span>
+            </div>
+          </div>
+          <div class="col-xl-8 col-xxl-7">
+            <div class="row">
+              <div class="col-xxl-8">
+                <div class="d-flex flex-column gap-6" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+                  <h2 class="mb-0">Member Success Stories</h2>
+                  <p class="fs-5 mb-0">See how our members have transformed their lives through our MRR programs - from financial freedom to complete location independence.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Owl Carousel Slider -->
+      <div class="featured-projects-slider px-3">
+        <div class="owl-carousel owl-theme">
+          <!-- Carousel Item 1 -->
+          <div class="item">
+            <div class="portfolio d-flex flex-column gap-6">
+              <div class="portfolio-img position-relative overflow-hidden">
+                <img src="../assets/images/portfolio/portfolio-img-1.jpg" alt="" class="img-fluid">
+                <div class="portfolio-overlay">
+                  <a href="projects-detail.html" class="position-absolute top-50 start-50 translate-middle bg-primary round-64 rounded-circle hstack justify-content-center">
+                    <iconify-icon icon="lucide:arrow-up-right" class="fs-8 text-dark"></iconify-icon>
+                  </a>
+                </div>
+              </div>
+              <div class="portfolio-details d-flex flex-column gap-3">
+                <h3 class="mb-0">Sarah's Journey</h3>
+                <div class="hstack gap-2">
+                  <span class="badge text-dark border">From £0 to £5k/month</span>
+                  <span class="badge text-dark border">6 Months</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Carousel Item 2 -->
+          <div class="item">
+            <div class="portfolio d-flex flex-column gap-6">
+              <div class="portfolio-img position-relative overflow-hidden">
+                <img src="../assets/images/portfolio/portfolio-img-2.jpg" alt="" class="img-fluid">
+                <div class="portfolio-overlay">
+                  <a href="projects-detail.html" class="position-absolute top-50 start-50 translate-middle bg-primary round-64 rounded-circle hstack justify-content-center">
+                    <iconify-icon icon="lucide:arrow-up-right" class="fs-8 text-dark"></iconify-icon>
+                  </a>
+                </div>
+              </div>
+              <div class="portfolio-details d-flex flex-column gap-3">
+                <h3 class="mb-0">Mike's Transformation</h3>
+                <div class="hstack gap-2">
+                  <span class="badge text-dark border">Quit 9-5 Job</span>
+                  <span class="badge text-dark border">Now Traveling</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Carousel Item 3 -->
+          <div class="item">
+            <div class="portfolio d-flex flex-column gap-6">
+              <div class="portfolio-img position-relative overflow-hidden">
+                <img src="../assets/images/portfolio/portfolio-img-3.jpg" alt="" class="img-fluid">
+                <div class="portfolio-overlay">
+                  <a href="projects-detail.html" class="position-absolute top-50 start-50 translate-middle bg-primary round-64 rounded-circle hstack justify-content-center">
+                    <iconify-icon icon="lucide:arrow-up-right" class="fs-8 text-dark"></iconify-icon>
+                  </a>
+                </div>
+              </div>
+              <div class="portfolio-details d-flex flex-column gap-3">
+                <h3 class="mb-0">The Johnson Family</h3>
+                <div class="hstack gap-2">
+                  <span class="badge text-dark border">Family Business</span>
+                  <span class="badge text-dark border">3 Income Streams</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Carousel Item 4 -->
+          <div class="item">
+            <div class="portfolio d-flex flex-column gap-6">
+              <div class="portfolio-img position-relative overflow-hidden">
+                <img src="../assets/images/portfolio/portfolio-img-4.jpg" alt="" class="img-fluid">
+                <div class="portfolio-overlay">
+                  <a href="projects-detail.html" class="position-absolute top-50 start-50 translate-middle bg-primary round-64 rounded-circle hstack justify-content-center">
+                    <iconify-icon icon="lucide:arrow-up-right" class="fs-8 text-dark"></iconify-icon>
+                  </a>
+                </div>
+              </div>
+              <div class="portfolio-details d-flex flex-column gap-3">
+                <h3 class="mb-0">Emma's Side Hustle</h3>
+                <div class="hstack gap-2">
+                  <span class="badge text-dark border">Student Success</span>
+                  <span class="badge text-dark border">£2k Passive Income</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Carousel Item 5 -->
+          <div class="item">
+            <div class="portfolio d-flex flex-column gap-6">
+              <div class="portfolio-img position-relative overflow-hidden">
+                <img src="../assets/images/portfolio/portfolio-img-5.jpg" alt="" class="img-fluid">
+                <div class="portfolio-overlay">
+                  <a href="projects-detail.html" class="position-absolute top-50 start-50 translate-middle bg-primary round-64 rounded-circle hstack justify-content-center">
+                    <iconify-icon icon="lucide:arrow-up-right" class="fs-8 text-dark"></iconify-icon>
+                  </a>
+                </div>
+              </div>
+              <div class="portfolio-details d-flex flex-column gap-3">
+                <h3 class="mb-0">David's Retirement Plan</h3>
+                <div class="hstack gap-2">
+                  <span class="badge text-dark border">At 55</span>
+                  <span class="badge text-dark border">Financial Freedom</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Carousel Item 6 -->
+          <div class="item">
+            <div class="portfolio d-flex flex-column gap-6">
+              <div class="portfolio-img position-relative overflow-hidden">
+                <img src="../assets/images/portfolio/portfolio-img-6.jpg" alt="" class="img-fluid">
+                <div class="portfolio-overlay">
+                  <a href="projects-detail.html" class="position-absolute top-50 start-50 translate-middle bg-primary round-64 rounded-circle hstack justify-content-center">
+                    <iconify-icon icon="lucide:arrow-up-right" class="fs-8 text-dark"></iconify-icon>
+                  </a>
+                </div>
+              </div>
+              <div class="portfolio-details d-flex flex-column gap-3">
+                <h3 class="mb-0">Lisa's Digital Empire</h3>
+                <div class="hstack gap-2">
+                  <span class="badge text-dark border">7-Figure Business</span>
+                  <span class="badge text-dark border">Team of 12</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Member Success Stories Section (Carousel) End -->
+
+
+  <!-- ===============================================================
+       SERVICES SECTION: Interactive tabbed layout showcasing key features.
+       =============================================================== -->
+  <section class="services py-5 py-lg-11 py-xl-12 bg-dark" id="services">
+    <div class="container">
+      <div class="d-flex flex-column gap-5 gap-xl-10">
+        <!-- Section Header -->
+        <div class="row gap-7 gap-xl-0">
+          <div class="col-xl-4 col-xxl-4">
+            <div class="d-flex align-items-center gap-7 py-2" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">
+              <span class="round-36 flex-shrink-0 text-dark rounded-circle bg-primary hstack justify-content-center fw-medium">03</span>
+              <hr class="border-line bg-white">
+              <span class="badge text-dark bg-white">Services</span>
+            </div>
+          </div>
+          <div class="col-xl-8 col-xxl-7">
+            <div class="row">
+              <div class="col-xxl-8">
+                <div class="d-flex flex-column gap-6" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+                  <h2 class="mb-0 text-white">Your Path to Financial Independence</h2>
+                  <p class="fs-5 mb-0 text-white text-opacity-70">We've created a proven system that gives you everything needed to build a profitable online business with Master Resell Rights - training, tools, and support included.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Tabbed Content Component -->
+        <div class="services-tab">
+          <div class="row gap-5 gap-xl-0">
+            <!-- Left Column: Tab Image Pane -->
+            <div class="col-xl-4">
+              <div class="tab-content" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000">
+                <!-- A single tab-pane holds the image, which will be changed via JavaScript -->
+                <div class="tab-pane active" id="one" role="tabpanel" aria-labelledby="one-tab" tabindex="0">
+                  <img src="../assets/images/services/services-img-1.jpg" alt="Automated Sales Funnels" class="img-fluid w-100 h-100 object-fit-cover" style="min-height: 300px;">
+                </div>
+              </div>
+            </div>
+            <!-- Right Column: Tab Navigation List -->
+            <div class="col-xl-8">
+              <div class="d-flex flex-column gap-5">
+                <!-- Bootstrap Nav Tabs (styled as a vertical list) -->
+                <ul class="nav nav-tabs flex-column" id="myTab" role="tablist" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                  <!-- Tab 1: Automated Sales Funnels -->
+                  <li class="nav-item py-4 py-lg-5 border-top border-white border-opacity-10 d-flex align-items-center w-100" role="presentation">
+                    <button class="nav-link w-100 text-start p-0 border-0 bg-transparent" id="one-tab" data-bs-toggle="tab" data-bs-target="#one" type="button" role="tab" aria-controls="one" aria-selected="true">
+                      <div class="row w-100 align-items-center gx-3">
+                        <div class="col-lg-6 col-xxl-5 pe-lg-3"><h3 class="fs-10 fw-bold mb-0 text-white">Automated Sales Funnels</h3></div>
+                        <div class="col-lg-6 col-xxl-7 ps-lg-3"><p class="text-white text-opacity-70 mb-0">Get ready-to-use sales funnels that convert visitors into buyers 24/7, with just a one-time $39 setup fee.</p></div>
+                      </div>
+                    </button>
+                  </li>
+                  <!-- Tab 2: 50K+ Member Community -->
+                  <li class="nav-item py-4 py-lg-5 border-top border-white border-opacity-10 d-flex align-items-center w-100" role="presentation">
+                    <button class="nav-link w-100 text-start p-0 border-0 bg-transparent" id="two-tab" data-bs-toggle="tab" data-bs-target="#one" type="button" role="tab" aria-controls="two" aria-selected="false">
+                      <div class="row w-100 align-items-center gx-3">
+                        <div class="col-lg-6 col-xxl-5 pe-lg-3"><h3 class="fs-10 fw-bold mb-0 text-white">50K+ Member Community</h3></div>
+                        <div class="col-lg-6 col-xxl-7 ps-lg-3"><p class="text-white text-opacity-70 mb-0">Get instant access to our private network of successful entrepreneurs for support, networking, and proven strategies.</p></div>
+                      </div>
+                    </button>
+                  </li>
+                  <!-- Tab 3: Live Coaching Network -->
+                  <li class="nav-item py-4 py-lg-5 border-top border-white border-opacity-10 d-flex align-items-center w-100" role="presentation">
+                    <button class="nav-link w-100 text-start p-0 border-0 bg-transparent" id="three-tab" data-bs-toggle="tab" data-bs-target="#one" type="button" role="tab" aria-controls="three" aria-selected="false">
+                      <div class="row w-100 align-items-center gx-3">
+                        <div class="col-lg-6 col-xxl-5 pe-lg-3"><h3 class="fs-10 fw-bold mb-0 text-white">Live Coaching Network</h3></div>
+                        <div class="col-lg-6 col-xxl-7 ps-lg-3"><p class="text-white text-opacity-70 mb-0">Weekly Zoom sessions with six-figure earners and direct mentorship from Mr. Nas to accelerate your success with the MRR system.</p></div>
+                      </div>
+                    </button>
+                  </li>
+                  <!-- Tab 4: 1-on-1 Mentorship -->
+                  <li class="nav-item py-4 py-lg-5 border-top border-white border-opacity-10 d-flex align-items-center w-100" role="presentation">
+                    <button class="nav-link w-100 text-start p-0 border-0 bg-transparent" id="four-tab" data-bs-toggle="tab" data-bs-target="#one" type="button" role="tab" aria-controls="four" aria-selected="false">
+                      <div class="row w-100 align-items-center gx-3">
+                        <div class="col-lg-6 col-xxl-5 pe-lg-3"><h3 class="fs-10 fw-bold mb-0 text-white">1-on-1 Mentorship</h3></div>
+                        <div class="col-lg-6 col-xxl-7 ps-lg-3"><p class="text-white text-opacity-70 mb-0">Get personalized guidance from Mr. Nas and our team of six-figure earners through weekly coaching calls and Q&A sessions.</p></div>
+                      </div>
+                    </button>
+                  </li>
+                </ul>
+                <!-- Call-to-Action Button -->
+                <a href="projects.html" class="btn border border-white border-opacity-25 align-self-start" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+                  <span class="btn-text">See our Work</span>
+                  <iconify-icon icon="lucide:arrow-up-right" class="btn-icon bg-white text-dark round-52 rounded-circle hstack justify-content-center fs-7 shadow-sm"></iconify-icon>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Services Section End -->
+
+
+  <!-- ===============================================================
+       INLINE SCRIPT: For handling the image switching in the Services section.
+       Note: It's generally better practice to move this to an external JS file.
+       =============================================================== -->
+  <script>
+    // Wait for the DOM to be fully loaded before running the script
+    document.addEventListener('DOMContentLoaded', function() {
+      // Select all tab trigger buttons and the single image element
+      const tabButtons = document.querySelectorAll('[data-bs-toggle="tab"]');
+      const mainImage = document.querySelector('#one img');
+      
+      // Create an object to map tab button IDs to their corresponding image paths
+      const imageSources = {
+        'one-tab': '../assets/images/services/services-img-1.jpg',
+        'two-tab': '../assets/images/services/services-img-2.jpg',
+        'three-tab': '../assets/images/services/services-img-3.jpg',
+        'four-tab': '../assets/images/services/services-img-4.jpg'
+      };
+      
+      // Add a click event listener to each tab button
+      tabButtons.forEach(button => {
+        button.addEventListener('click', function() {
+          const tabId = this.id; // Get the ID of the clicked button
+          mainImage.src = imageSources[tabId]; // Change the image 'src' attribute
+          mainImage.alt = this.querySelector('h3').textContent + ' service image'; // Update alt text for accessibility
+        });
+      });
+    });
+  </script>
+  <!-- Inline Script End -->
+
+
+  <!-- ===============================================================
+       WHY CHOOSE US SECTION: Highlights key value propositions.
+       =============================================================== -->
+  <section class="why-choose-us py-5 py-lg-11 py-xl-12">
+    <div class="container">
+      <div class="row justify-content-between gap-5 gap-xl-0">
+        <!-- Left Column: Section Header & Text -->
+        <div class="col-xl-3 col-xxl-3">
+          <div class="d-flex flex-column gap-7">
+            <div class="d-flex align-items-center gap-7 py-2" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">
+              <span class="round-36 flex-shrink-0 text-dark rounded-circle bg-primary hstack justify-content-center fw-medium">04</span>
+              <hr class="border-line">
+              <span class="badge text-bg-dark">About us</span>
+            </div>
+            <h2 class="mb-0" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">Why choose us</h2>
+            <p class="mb-0 fs-5" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000">We combine proven MRR strategies with comprehensive training to create financial freedom opportunities. With a focus on results, community support, and ethical business practices.</p>
+          </div>
+        </div>
+        <!-- Right Column: Card Layout -->
+        <div class="col-xl-9 col-xxl-8">
+          <div class="row">
+            <!-- Card 1: Member Satisfaction -->
+            <div class="col-lg-4 mb-7 mb-lg-0">
+              <div class="card position-relative overflow-hidden bg-primary h-100" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+                <div class="card-body d-flex flex-column justify-content-between">
+                  <div class="d-flex flex-column gap-3 position-relative z-1">
+                    <ul class="list-unstyled mb-0 hstack gap-1">
+                      <li><a class="hstack" href="javascript:void(0)"><iconify-icon icon="solar:star-bold" class="fs-6 text-dark"></iconify-icon></a></li>
+                      <li><a class="hstack" href="javascript:void(0)"><iconify-icon icon="solar:star-bold" class="fs-6 text-dark"></iconify-icon></a></li>
+                      <li><a class="hstack" href="javascript:void(0)"><iconify-icon icon="solar:star-bold" class="fs-6 text-dark"></iconify-icon></a></li>
+                      <li><a class="hstack" href="javascript:void(0)"><iconify-icon icon="solar:star-bold" class="fs-6 text-dark"></iconify-icon></a></li>
+                      <li><a class="hstack" href="javascript:void(0)"><iconify-icon icon="solar:star-line-duotone" class="fs-6 text-dark"></iconify-icon></a></li>
+                    </ul>
+                    <p class="mb-0 fs-6 text-dark">The MRR program transformed my income potential completely while working from home.</p>
+                  </div>
+                  <div class="position-relative z-1">
+                    <div class="pb-6 border-bottom">
+                      <h2 class="mb-0">96.8%</h2>
+                      <p class="mb-0">Member satisfaction</p>
+                    </div>
+                    <div class="hstack gap-6 pt-6">
+                      <img src="../assets/images/profile/avatar-1.png" alt="" class="img-fluid rounded-circle overflow-hidden flex-shrink-0" width="64" height="64">
+                      <div>
+                        <h5 class="mb-0">Sarah Johnson</h5>
+                        <p class="mb-0">Digital Entrepreneur</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="position-absolute bottom-0 end-0">
+                    <img src="../assets/images/backgrounds/customer-satisfaction-bg.svg" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Card 2: Community Size -->
+            <div class="col-lg-4 mb-7 mb-lg-0">
+              <div class="d-flex flex-column gap-7" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                <div class="position-relative">
+                  <img src="../assets/images/services/services-img-2.jpg" alt="" class="img-fluid w-100">
+                </div>
+                <div class="card bg-dark">
+                  <div class="card-body d-flex flex-column gap-7">
+                    <div>
+                      <h2 class="mb-0 text-white">50,000+</h2>
+                      <p class="mb-0 text-white text-opacity-70">Active community members</p>
+                    </div>
+                    <ul class="d-flex align-items-center mb-0">
+                      <li><a href="javascript:void(0)"><img src="../assets/images/profile/user-1.jpg" width="44" height="44" class="rounded-circle border border-2 border-dark" alt="user-1"></a></li>
+                      <li class="ms-n2"><a href="javascript:void(0)"><img src="../assets/images/profile/user-2.jpg" width="44" height="44" class="rounded-circle border border-2 border-dark" alt="user-2"></a></li>
+                      <li class="ms-n2"><a href="javascript:void(0)"><img src="../assets/images/profile/user-3.jpg" width="44" height="44" class="rounded-circle border border-2 border-dark" alt="user-3"></a></li>
+                      <li class="ms-n2"><a href="javascript:void(0)"><img src="../assets/images/profile/user-4.jpg" width="44" height="44" class="rounded-circle border border-2 border-dark" alt="user-4"></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Card 3: Profit Retention -->
+            <div class="col-lg-4 mb-7 mb-lg-0">
+              <div class="card border h-100 position-relative overflow-hidden" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+                <span class="border rounded-circle round-490 d-block position-absolute top-0 start-50 translate-middle"></span>
+                <div class="card-body d-flex flex-column justify-content-between">
+                  <div>
+                    <h2 class="mb-0">100%</h2>
+                    <p class="mb-0 text-dark">Profit retention</p>
+                  </div>
+                  <div class="d-flex flex-column gap-3">
+                    <a href="index.html" class="logo-dark"><img src="../assets/images/logos/logo-dark.svg" alt="logo" class="img-fluid"></a>
+                    <p class="mb-0 fs-5 text-dark">Our Master Resell Rights license allows you to keep all profits from every sale with no hidden fees or royalties.</p>
+                  </div>
+                </div>
+                <span class="border rounded-circle round-490 d-block position-absolute top-100 start-50 translate-middle"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Why choose us Section End -->
+
+
+  <!-- ===============================================================
+       TESTIMONIAL SECTION: Displays member quotes and reviews.
+       =============================================================== -->
+  <section class="testimonial py-5 py-lg-11 py-xl-12 bg-light-gray">
+    <div class="container">
+      <div class="d-flex flex-column gap-5 gap-xl-11">
+        <!-- Section Header -->
+        <div class="row gap-7 gap-xl-0">
+          <div class="col-xl-4 col-xxl-4">
+            <div class="d-flex align-items-center gap-7 py-2" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">
+              <span class="round-36 flex-shrink-0 text-dark rounded-circle bg-primary hstack justify-content-center fw-medium">05</span>
+              <hr class="border-line bg-white">
+              <span class="badge text-bg-dark">Success Stories</span>
+            </div>
+          </div>
+          <div class="col-xl-8 col-xxl-7">
+            <div class="row">
+              <div class="col-xxl-8">
+                <div class="d-flex flex-column gap-6" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+                  <h2 class="mb-0">Results From Our Members</h2>
+                  <p class="fs-5 mb-0 text-opacity-70">Real experiences, genuine results—see how our MRR system has created financial freedom for people just like you.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Testimonial Cards Row -->
+        <div class="row gap-7 gap-lg-0">
+          <!-- Testimonial 1 -->
+          <div class="col-lg-4 col-xl-3 d-flex align-items-stretch">
+            <div class="card bg-primary w-100" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+              <div class="card-body d-flex flex-column gap-5 gap-xl-11 justify-content-between">
+                <div class="d-flex flex-column gap-4">
+                  <p class="mb-0">Member Results</p>
+                  <h4 class="mb-0">I made $5,200 in my first month with the MRR system - life changing!</h4>
+                </div>
+                <div class="hstack gap-3">
+                  <img src="../assets/images/testimonial/testimonial-1.jpg" alt="" class="img-fluid rounded-circle overflow-hidden flex-shrink-0" width="60" height="60">
+                  <div>
+                    <h5 class="mb-1 fw-normal">Sarah Johnson</h5>
+                    <p class="mb-0">Stay-at-Home Mom</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Testimonial 2 -->
+          <div class="col-lg-4 col-xl-6 d-flex align-items-stretch">
+            <div class="card bg-dark w-100" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+              <div class="card-body d-flex flex-column gap-5 gap-xl-11 justify-content-between">
+                <div class="d-flex flex-column gap-4">
+                  <p class="mb-0 text-white text-opacity-70">Member Results</p>
+                  <h4 class="mb-0 text-white pe-xl-2">The automated funnels and community support helped me replace my full-time income in 3 months!</h4>
+                  <div class="hstack gap-2">
+                    <ul class="list-unstyled mb-0 hstack gap-1">
+                      <li><a class="hstack" href="javascript:void(0)"><iconify-icon icon="solar:star-bold" class="fs-6 text-white"></iconify-icon></a></li>
+                      <li><a class="hstack" href="javascript:void(0)"><iconify-icon icon="solar:star-bold" class="fs-6 text-white"></iconify-icon></a></li>
+                      <li><a class="hstack" href="javascript:void(0)"><iconify-icon icon="solar:star-bold" class="fs-6 text-white"></iconify-icon></a></li>
+                      <li><a class="hstack" href="javascript:void(0)"><iconify-icon icon="solar:star-bold" class="fs-6 text-white"></iconify-icon></a></li>
+                      <li><a class="hstack" href="javascript:void(0)"><iconify-icon icon="solar:star-line-duotone" class="fs-6 text-white"></iconify-icon></a></li>
+                    </ul>
+                    <h6 class="mb-0 text-white fw-medium">4.8</h6>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center justify-content-between">
+                  <div class="hstack gap-3">
+                    <img src="../assets/images/testimonial/testimonial-2.jpg" alt="" class="img-fluid rounded-circle overflow-hidden flex-shrink-0" width="60" height="60">
+                    <div>
+                      <h5 class="mb-1 fw-normal text-white">Michael Brown</h5>
+                      <p class="mb-0 text-white text-opacity-70">Former 9-5 Employee</p>
+                    </div>
+                  </div>
+                  <span><img src="../assets/images/testimonial/quete.svg" alt="quete" class="img-fluid flex-shrink-0"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Testimonial 3 -->
+          <div class="col-lg-4 col-xl-3 d-flex align-items-stretch">
+            <div class="card w-100" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+              <div class="card-body d-flex flex-column gap-5 gap-xl-11 justify-content-between">
+                <div class="d-flex flex-column gap-4">
+                  <p class="mb-0">Member Results</p>
+                  <h4 class="mb-0">The training and support made all the difference - now I'm helping others succeed too!</h4>
+                </div>
+                <div class="hstack gap-3">
+                  <img src="../assets/images/testimonial/testimonial-3.jpg" alt="" class="img-fluid rounded-circle overflow-hidden flex-shrink-0" width="60" height="60">
+                  <div>
+                    <h5 class="mb-1 fw-normal">David Wilson</h5>
+                    <p class="mb-0">Digital Entrepreneur</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Testimonial Section End -->
+
+
+  <!-- ===============================================================
+       PARTNER PROGRAMS SECTION: Highlights affiliated programs.
+       =============================================================== -->
+  <section class="meet-our-team py-5 py-lg-11 py-xl-12">
+    <div class="container">
+      <div class="d-flex flex-column gap-5 gap-xl-11">
+        <!-- Section Header -->
+        <div class="row gap-7 gap-xl-0">
+          <div class="col-xl-4 col-xxl-4">
+            <div class="d-flex align-items-center gap-7 py-2" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">
+              <span class="round-36 flex-shrink-0 text-dark rounded-circle bg-primary hstack justify-content-center fw-medium">06</span>
+              <hr class="border-line bg-white">
+              <span class="badge text-bg-dark">Partners</span>
+            </div>
+          </div>
+          <div class="col-xl-8 col-xxl-7">
+            <div class="row">
+              <div class="col-xxl-8">
+                <div class="d-flex flex-column gap-6" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+                  <h2 class="mb-0">Our Partner Programs</h2>
+                  <p class="fs-5 mb-0 text-opacity-70">Discover our carefully selected affiliate programs that complement your digital growth journey and provide additional income streams.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Partner Cards Row -->
+        <div class="row">
+          <!-- Partner 1: Mindvalley -->
+          <div class="col-md-6 col-xl-3 mb-7 mb-xl-0">
+            <div class="meet-team d-flex flex-column gap-4" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+              <div class="meet-team-img position-relative overflow-hidden">
+                <img src="../assets/images/team/team-img-1.jpg" alt="Mindvalley" class="img-fluid w-100">
+                <div class="meet-team-overlay p-7 d-flex flex-column justify-content-end">
+                  <a href="https://join.mindvalley.com/r/kgdVUQuEYi9O" target="_blank" class="btn bg-white px-4 py-2 rounded-pill fw-medium">Join Now</a>
+                </div>
+              </div>
+              <div class="meet-team-details">
+                <h4 class="mb-0">Mindvalley</h4>
+                <p class="mb-0">Personal Growth Platform</p>
+              </div>
+            </div>
+          </div>
+          <!-- Partner 2: Nas Digital Blog -->
+          <div class="col-md-6 col-xl-3 mb-7 mb-xl-0">
+            <div class="meet-team d-flex flex-column gap-4" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+              <div class="meet-team-img position-relative overflow-hidden">
+                <img src="../assets/images/team/team-img-2.jpg" alt="Nas Digital Blog" class="img-fluid w-100">
+                <div class="meet-team-overlay p-7 d-flex flex-column justify-content-end">
+                  <a href="https://nasdigitalgrowth.co.uk/" target="_blank" class="btn bg-white px-4 py-2 rounded-pill fw-medium">Visit Blog</a>
+                </div>
+              </div>
+              <div class="meet-team-details">
+                <h4 class="mb-0">Nas Digital Blog</h4>
+                <p class="mb-0">MRR & Digital Marketing</p>
+              </div>
+            </div>
+          </div>
+          <!-- Partner 3: NDC Agency -->
+          <div class="col-md-6 col-xl-3 mb-7 mb-xl-0">
+            <div class="meet-team d-flex flex-column gap-4" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+              <div class="meet-team-img position-relative overflow-hidden">
+                <img src="../assets/images/team/team-img-3.jpg" alt="NDC Agency" class="img-fluid w-100">
+                <div class="meet-team-overlay p-7 d-flex flex-column justify-content-end">
+                  <a href="https://ndc-agency.co.uk/" target="_blank" class="btn bg-white px-4 py-2 rounded-pill fw-medium">Our Services</a>
+                </div>
+              </div>
+              <div class="meet-team-details">
+                <h4 class="mb-0">NDC Agency</h4>
+                <p class="mb-0">Digital Services</p>
+              </div>
+            </div>
+          </div>
+          <!-- Partner 4: Free Blueprint -->
+          <div class="col-md-6 col-xl-3 mb-7 mb-xl-0">
+            <div class="meet-team d-flex flex-column gap-4" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+              <div class="meet-team-img position-relative overflow-hidden">
+                <img src="../assets/images/team/team-img-4.jpg" alt="Free Blueprint" class="img-fluid w-100">
+                <div class="meet-team-overlay p-7 d-flex flex-column justify-content-end">
+                  <a href="https://boards.com/a/7Y4ZUn.KnV3hs" target="_blank" class="btn bg-white px-4 py-2 rounded-pill fw-medium">Claim FREE</a>
+                </div>
+              </div>
+              <div class="meet-team-details">
+                <h4 class="mb-0">FREE Business Blueprint</h4>
+                <p class="mb-0">Done-For-You System</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Affiliate Programs Section End -->
+
+
+  <!-- ===============================================================
+       PROGRAM TIERS / PRICING SECTION: Displays pricing cards.
+       =============================================================== -->
+  <section class="pricing-section py-5 py-lg-11 py-xl-12 bg-light-gray">
+    <div class="container">
+      <div class="d-flex flex-column gap-5 gap-xl-10">
+        <div class="d-flex flex-column gap-5 gap-xl-11">
+          <!-- Section Header -->
+          <div class="row gap-7 gap-xl-0">
+            <div class="col-xl-4 col-xxl-4">
+              <div class="d-flex align-items-center gap-7 py-2" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">
+                <span class="round-36 flex-shrink-0 text-dark rounded-circle bg-primary hstack justify-content-center fw-medium">07</span>
+                <hr class="border-line bg-white">
+                <span class="badge text-bg-dark">Program Tiers</span>
+              </div>
+            </div>
+            <div class="col-xl-8 col-xxl-7">
+              <div class="row">
+                <div class="col-xxl-8">
+                  <div class="d-flex flex-column gap-6" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+                    <h2 class="mb-0">Start Your MRR Journey Today</h2>
+                    <p class="fs-5 mb-0 text-opacity-70">Choose the perfect entry point to financial freedom with our tiered MRR program - each level unlocks greater earning potential.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Pricing Cards Row -->
+          <div class="row">
+            <!-- Tier 1: LaunchPad -->
+            <div class="col-lg-6 col-xl-4 mb-7 mb-xl-0 d-flex align-items-stretch">
+              <div class="card w-100" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+                <div class="card-body p-7 p-xxl-5 d-flex flex-column gap-8">
+                  <div class="d-flex flex-column gap-6">
+                    <h5 class="mb-0 fw-medium">LaunchPad</h5>
+                    <div class="hstack gap-2"><h3 class="mb-0">$100</h3><p class="mb-0">one-time</p></div>
+                    <p class="mb-0">Perfect for beginners starting their MRR business journey.</p>
+                  </div>
+                  <div class="pt-8 border-top d-flex flex-column gap-6">
+                    <h6 class="mb-0 fw-normal">What's Included:</h6>
+                    <ul class="list-unstyled d-flex flex-column gap-3 mb-0">
+                      <li class="hstack gap-3"><span class="round-32 rounded-circle bg-primary flex-shrink-0 hstack justify-content-center"><iconify-icon icon="lucide:check" class="fs-6 text-dark"></iconify-icon></span><h6 class="mb-0 fw-normal">Basic MRR Training</h6></li>
+                      <li class="hstack gap-3"><span class="round-32 rounded-circle bg-primary flex-shrink-0 hstack justify-content-center"><iconify-icon icon="lucide:check" class="fs-6 text-dark"></iconify-icon></span><h6 class="mb-0 fw-normal">Resell Rights for Tier 1</h6></li>
+                      <li class="hstack gap-3"><span class="round-32 rounded-circle bg-primary flex-shrink-0 hstack justify-content-center"><iconify-icon icon="lucide:check" class="fs-6 text-dark"></iconify-icon></span><h6 class="mb-0 fw-normal">Community Access</h6></li>
+                      <li class="hstack gap-3"><span class="round-32 rounded-circle bg-primary flex-shrink-0 hstack justify-content-center"><iconify-icon icon="lucide:check" class="fs-6 text-dark"></iconify-icon></span><h6 class="mb-0 fw-normal">Weekly Q&A Sessions</h6></li>
+                    </ul>
+                  </div>
+                  <a href="https://wa.me/447449728800?text=I'm%20interested%20in%20the%20LaunchPad%20Program%20(%24100)%20and%20would%20like%20to%20get%20started%20with%20basic%20MRR%20training." class="btn w-100 justify-content-center">
+                    <span class="btn-text">Get Started</span>
+                    <iconify-icon icon="lucide:arrow-up-right" class="btn-icon bg-white text-dark round-52 rounded-circle hstack justify-content-center fs-7 shadow-sm"></iconify-icon>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- Tier 2: Passive Daily Pay (Most Popular) -->
+            <div class="col-lg-6 col-xl-4 mb-7 mb-xl-0 d-flex align-items-stretch">
+              <div class="card w-100" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                <div class="card-body p-7 p-xxl-5 d-flex flex-column gap-8">
+                  <div class="d-flex flex-column gap-6">
+                    <div class="hstack gap-3"><h5 class="mb-0 fw-medium">Passive Daily Pay</h5><span class="badge text-bg-dark hstack gap-2"><iconify-icon icon="lucide:flame" class="fs-5"></iconify-icon>Most popular</span></div>
+                    <div class="hstack gap-2"><h3 class="mb-0 text-opacity-50 text-dark"><del>$500</del></h3><h3 class="mb-0">$300</h3><p class="mb-0">one-time</p></div>
+                    <p class="mb-0">Our best value package for serious income growth.</p>
+                  </div>
+                  <div class="pt-8 border-top d-flex flex-column gap-6">
+                    <h6 class="mb-0 fw-normal">What's Included:</h6>
+                    <ul class="list-unstyled d-flex flex-column gap-3 mb-0">
+                      <li class="hstack gap-3"><span class="round-32 rounded-circle bg-primary flex-shrink-0 hstack justify-content-center"><iconify-icon icon="lucide:check" class="fs-6 text-dark"></iconify-icon></span><h6 class="mb-0 fw-normal">Everything in LaunchPad</h6></li>
+                      <li class="hstack gap-3"><span class="round-32 rounded-circle bg-primary flex-shrink-0 hstack justify-content-center"><iconify-icon icon="lucide:check" class="fs-6 text-dark"></iconify-icon></span><h6 class="mb-0 fw-normal">Automated Sales Funnels</h6></li>
+                      <li class="hstack gap-3"><span class="round-32 rounded-circle bg-primary flex-shrink-0 hstack justify-content-center"><iconify-icon icon="lucide:check" class="fs-6 text-dark"></iconify-icon></span><h6 class="mb-0 fw-normal">Faceless Marketing System</h6></li>
+                      <li class="hstack gap-3"><span class="round-32 rounded-circle bg-primary flex-shrink-0 hstack justify-content-center"><iconify-icon icon="lucide:check" class="fs-6 text-dark"></iconify-icon></span><h6 class="mb-0 fw-normal">Resell Rights for Tiers 1-2</h6></li>
+                    </ul>
+                  </div>
+                  <a href="https://wa.me/447449728800?text=I%20want%20to%20join%20the%20Passive%20Daily%20Pay%20Program%20(%24300)%20for%20automated%20sales%20funnels%20and%20faceless%20marketing%20system." class="btn w-100 justify-content-center">
+                    <span class="btn-text">Join Now</span>
+                    <iconify-icon icon="lucide:arrow-up-right" class="btn-icon bg-white text-dark round-52 rounded-circle hstack justify-content-center fs-7 shadow-sm"></iconify-icon>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- Tier 3: Legacy Builders -->
+            <div class="col-lg-6 col-xl-4 mb-7 mb-xl-0 d-flex align-items-stretch">
+              <div class="card w-100" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+                <div class="card-body p-7 p-xxl-5 d-flex flex-column gap-8">
+                  <div class="d-flex flex-column gap-6">
+                    <h5 class="mb-0 fw-medium">Legacy Builders</h5>
+                    <div class="hstack gap-2"><h3 class="mb-0">$900</h3><p class="mb-0">one-time</p></div>
+                    <p class="mb-0">Complete system with maximum earning potential.</p>
+                  </div>
+                  <div class="pt-8 border-top d-flex flex-column gap-6">
+                    <h6 class="mb-0 fw-normal">What's Included:</h6>
+                    <ul class="list-unstyled d-flex flex-column gap-3 mb-0">
+                      <li class="hstack gap-3"><span class="round-32 rounded-circle bg-primary flex-shrink-0 hstack justify-content-center"><iconify-icon icon="lucide:check" class="fs-6 text-dark"></iconify-icon></span><h6 class="mb-0 fw-normal">All Previous Tier Benefits</h6></li>
+                      <li class="hstack gap-3"><span class="round-32 rounded-circle bg-primary flex-shrink-0 hstack justify-content-center"><iconify-icon icon="lucide:check" class="fs-6 text-dark"></iconify-icon></span><h6 class="mb-0 fw-normal">1-on-1 Coaching Sessions</h6></li>
+                      <li class="hstack gap-3"><span class="round-32 rounded-circle bg-primary flex-shrink-0 hstack justify-content-center"><iconify-icon icon="lucide:check" class="fs-6 text-dark"></iconify-icon></span><h6 class="mb-0 fw-normal">Resell Rights for All Tiers</h6></li>
+                      <li class="hstack gap-3"><span class="round-32 rounded-circle bg-primary flex-shrink-0 hstack justify-content-center"><iconify-icon icon="lucide:check" class="fs-6 text-dark"></iconify-icon></span><h6 class="mb-0 fw-normal">Priority Support & Mentorship</h6></li>
+                    </ul>
+                  </div>
+                  <a href="https://wa.me/447449728800?text=I'm%20ready%20to%20build%20my%20legacy%20with%20the%20%24900%20program!%20Please%20send%20me%20details%20about%201-on-1%20coaching%20and%20full%20resell%20rights." class="btn w-100 justify-content-center">
+                    <span class="btn-text">Build Your Legacy</span>
+                    <iconify-icon icon="lucide:arrow-up-right" class="btn-icon bg-white text-dark round-52 rounded-circle hstack justify-content-center fs-7 shadow-sm"></iconify-icon>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Marquee / Scrolling Testimonial Logos -->
+        <div class="d-flex flex-column gap-8" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+          <p class="fs-5 mb-0 text-center text-dark">Join 50,000+ members who transformed their lives</p>
+          <div class="marquee w-100 d-flex align-items-center overflow-hidden">
+            <div class="marquee-content d-flex align-items-center gap-8">
+              <div class="marquee-tag hstack justify-content-center"><img src="../assets/images/pricing/testimonial-1.svg" alt="Member success" class="img-fluid"></div>
+              <div class="marquee-tag hstack justify-content-center"><img src="../assets/images/pricing/testimonial-2.svg" alt="MRR results" class="img-fluid"></div>
+              <div class="marquee-tag hstack justify-content-center"><img src="../assets/images/pricing/testimonial-3.svg" alt="Community" class="img-fluid"></div>
+              <div class="marquee-tag hstack justify-content-center"><img src="../assets/images/pricing/testimonial-4.svg" alt="Coaching" class="img-fluid"></div>
+              <div class="marquee-tag hstack justify-content-center"><img src="../assets/images/pricing/testimonial-5.svg" alt="Training" class="img-fluid"></div>
+              <!-- Duplicated for seamless loop effect -->
+              <div class="marquee-tag hstack justify-content-center"><img src="../assets/images/pricing/testimonial-1.svg" alt="Member success" class="img-fluid"></div>
+              <div class="marquee-tag hstack justify-content-center"><img src="../assets/images/pricing/testimonial-2.svg" alt="MRR results" class="img-fluid"></div>
+              <div class="marquee-tag hstack justify-content-center"><img src="../assets/images/pricing/testimonial-3.svg" alt="Community" class="img-fluid"></div>
+              <div class="marquee-tag hstack justify-content-center"><img src="../assets/images/pricing/testimonial-4.svg" alt="Coaching" class="img-fluid"></div>
+              <div class="marquee-tag hstack justify-content-center"><img src="../assets/images/pricing/testimonial-5.svg" alt="Training" class="img-fluid"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Program Tiers Section End -->
+
+
+  <!-- ===============================================================
+       FAQ SECTION: Accordion-style Frequently Asked Questions.
+       =============================================================== -->
+  <section class="faq py-5 py-lg-11 py-xl-12">
+    <div class="container">
+      <div class="d-flex flex-column gap-5 gap-xl-11">
+        <!-- Section Header -->
+        <div class="row gap-7 gap-xl-0">
+          <div class="col-xl-4 col-xxl-4">
+            <div class="d-flex align-items-center gap-7 py-2" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">
+              <span class="round-36 flex-shrink-0 text-dark rounded-circle bg-primary hstack justify-content-center fw-medium">08</span>
+              <hr class="border-line bg-white">
+              <span class="badge text-bg-dark">FAQs</span>
+            </div>
+          </div>
+          <div class="col-xl-8 col-xxl-7">
+            <div class="row">
+              <div class="col-xxl-9">
+                <div class="d-flex flex-column gap-6" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+                  <h2 class="mb-0">Frequently asked questions</h2>
+                  <p class="fs-5 mb-0 text-opacity-70">Get answers about our Master Resell Rights program, training system, and how you can start earning quickly with our proven methods.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Accordion Component -->
+        <div class="row justify-content-end">
+          <div class="col-xl-8">
+            <div class="accordion accordion-flush" id="accordionFlushExample" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+              <!-- FAQ Item 1 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed fs-8 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">Is Master Resell Rights (MRR) legal?</button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body pt-0 fs-5 text-dark">Absolutely! MRR is a legitimate licensing model for digital products. We provide full legal documentation with all our program tiers, allowing you to resell our training legally while keeping 100% of profits.</div>
+                </div>
+              </div>
+              <!-- FAQ Item 2 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed fs-8 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">How quickly can I start earning?</button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body pt-0 fs-5 text-dark">Many members see their first sales within days. With our done-for-you sales funnels ($39 setup) and training, you can be up and running immediately. Your results will depend on how actively you implement our strategies.</div>
+                </div>
+              </div>
+              <!-- FAQ Item 3 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed fs-8 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">Do I need marketing experience?</button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body pt-0 fs-5 text-dark">Not at all! Our training is designed for complete beginners. We teach simple "faceless marketing" methods that don't require showing your face or prior experience. Plus, you'll have access to our 50,000+ member community for support.</div>
+                </div>
+              </div>
+              <!-- FAQ Item 4 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed fs-8 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">What's included in each program tier?</button>
+                </h2>
+                <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body pt-0 fs-5 text-dark">We offer 4 tiers: LaunchPad ($100), Passive Daily Pay ($300), Digital Mastery ($600), and Legacy Builders ($900). Higher tiers include more advanced training and the rights to resell more products. You must own a tier to earn from it.</div>
+                </div>
+              </div>
+              <!-- FAQ Item 5 -->
+              <div class="accordion-item border-bottom">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed fs-8 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">How does the community support work?</button>
+                </h2>
+                <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body pt-0 fs-5 text-dark">You'll get immediate access to our private Digital Growth Community with 50,000+ members. We host weekly Zoom calls with six-figure earners, and Mr. Nas provides direct mentorship. It's an invaluable resource for getting answers and staying motivated.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- FAQ Section End -->
+
+
+  <!-- ===============================================================
+       SUCCESS STORIES SECTION (Blog Post Style): Displays recent news/posts.
+       =============================================================== -->
+  <section class="Recent-news bg-light-gray py-5 py-lg-11 py-xl-12">
+    <div class="container">
+      <div class="d-flex flex-column gap-5 gap-xl-11">
+        <!-- Section Header -->
+        <div class="row gap-7 gap-xl-0">
+          <div class="col-xl-4 col-xxl-4">
+            <div class="d-flex align-items-center gap-7 py-2" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">
+              <span class="round-36 flex-shrink-0 text-dark rounded-circle bg-primary hstack justify-content-center fw-medium">09</span>
+              <hr class="border-line bg-white">
+              <span class="badge text-bg-dark">Success Stories</span>
+            </div>
+          </div>
+          <div class="col-xl-8 col-xxl-7">
+            <div class="row">
+              <div class="col-xxl-8">
+                <div class="d-flex flex-column gap-6" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+                  <h2 class="mb-0">Member Success Stories</h2>
+                  <p class="fs-5 mb-0 text-opacity-70">Discover how our members are achieving financial freedom through our Master Resell Rights program and community support.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Blog Posts Row -->
+        <div class="row">
+          <!-- Post 1 -->
+          <div class="col-xl-6 mb-7 mb-xl-0">
+            <div class="resources d-flex flex-column gap-6" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+              <a href="success-story-1.html" class="resources-img resources-img-first position-relative overflow-hidden d-block">
+                <img src="../assets/images/resources/resources-1.jpg" alt="Member success story" class="img-fluid">
+              </a>
+              <div class="resources-details">
+                <p class="mb-0">Mar 15, 2024</p>
+                <h4 class="mb-0">From $0 to $5k/month with MRR</h4>
+              </div>
+            </div>
+          </div>
+          <!-- Post 2 -->
+          <div class="col-md-6 col-xl-3 mb-7 mb-xl-0">
+            <div class="resources d-flex flex-column gap-6" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+              <a href="success-story-2.html" class="resources-img position-relative overflow-hidden d-block">
+                <img src="../assets/images/resources/resources-2.jpg" alt="Community success" class="img-fluid">
+              </a>
+              <div class="resources-details">
+                <p class="mb-0">Feb 28, 2024</p>
+                <h4 class="mb-0">How our community helped Sarah quit her 9-5</h4>
+              </div>
+            </div>
+          </div>
+          <!-- Post 3 -->
+          <div class="col-md-6 col-xl-3 mb-7 mb-xl-0">
+            <div class="resources d-flex flex-column gap-6" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+              <a href="success-story-3.html" class="resources-img position-relative overflow-hidden d-block">
+                <img src="../assets/images/resources/resources-3.jpg" alt="Faceless marketing success" class="img-fluid">
+              </a>
+              <div class="resources-details">
+                <p class="mb-0">Jan 10, 2024</p>
+                <h4 class="mb-0">Building a 6-figure business anonymously</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Success Stories Section (Blog Post Style) End -->
+
+
+  <!-- ===============================================================
+       GET IN TOUCH SECTION: Contact form and contact info.
+       =============================================================== -->
+  <section class="get-in-touch py-5 py-lg-11 py-xl-12">
+    <div class="container">
+      <div class="d-flex flex-column gap-5 gap-xl-10">
+        <!-- Section Header -->
+        <div class="row gap-7 gap-xl-0">
+          <div class="col-xl-4 col-xxl-4">
+            <div class="d-flex align-items-center gap-7 py-2" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">
+              <span class="round-36 flex-shrink-0 text-dark rounded-circle bg-primary hstack justify-content-center fw-medium">10</span>
+              <hr class="border-line bg-white">
+              <span class="badge text-bg-dark">Join Us</span>
+            </div>
+          </div>
+          <div class="col-xl-8 col-xxl-7">
+            <div class="row">
+              <div class="col-xxl-8">
+                <div class="d-flex flex-column gap-6" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+                  <h2 class="mb-0">Start Your Digital Journey</h2>
+                  <p class="fs-5 mb-0">Ready to build your legacy with our proven MRR system?</p>
+                  <!-- Quick Contact Buttons -->
+                  <div class="d-flex flex-column flex-md-row gap-3 mt-3">
+                    <a href="https://wa.me/447449728800" class="btn btn-outline-dark d-flex align-items-center justify-content-center gap-2 flex-grow-1" target="_blank">
+                      <iconify-icon icon="ri:whatsapp-line" class="fs-5"></iconify-icon> Chat on WhatsApp
+                    </a>
+                    <a href="mailto:mr.nasir.nu10@gmail.com" class="btn btn-outline-dark d-flex align-items-center justify-content-center gap-2 flex-grow-1">
+                      <iconify-icon icon="ri:mail-line" class="fs-5"></iconify-icon> Email Us
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Contact Form and supporting text -->
+        <div class="row justify-content-between gap-7 gap-xl-0">
+          <!-- Left Column: Supporting Text -->
+          <div class="col-xl-3">
+            <p class="mb-0 fs-5" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">
+              Get personalized guidance on which program fits your goals. Our team will help you choose the right path to financial freedom.
+            </p>
+          </div>
+          <!-- Right Column: Form -->
+          <div class="col-xl-8">
+            <form class="d-flex flex-column gap-7" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000" action="mailto:mr.nasir.nu10@gmail.com" method="POST" enctype="text/plain">
+              <div><input type="text" class="form-control border-bottom border-dark" id="formGroupNameInput" placeholder="Your Name" name="name" required></div>
+              <div><input type="email" class="form-control border-bottom border-dark" id="formGroupEmailInput" placeholder="Email Address" name="email" required></div>
+              <div><input type="tel" class="form-control border-bottom border-dark" id="formGroupPhoneInput" placeholder="Phone Number (optional)" name="phone"></div>
+              <div>
+                <select class="form-control border-bottom border-dark" id="formGroupProgramInput" name="program">
+                  <option value="" disabled selected>Which program interests you?</option>
+                  <option value="launchpad">LaunchPad Program ($100)</option>
+                  <option value="passive">Passive Daily Pay ($300)</option>
+                  <option value="legacy">Legacy Builders ($900)</option>
+                  <option value="notsure">Not sure - need guidance</option>
+                </select>
+              </div>
+              <div><textarea class="form-control border-bottom border-dark" id="formGroupMessageInput" placeholder="Tell us about your goals and experience level (optional)" rows="2" name="message"></textarea></div>
+              <button type="submit" class="btn w-100 justify-content-center">
+                <span class="btn-text">Get Started Now</span>
+                <iconify-icon icon="lucide:arrow-up-right" class="btn-icon bg-white text-dark round-52 rounded-circle hstack justify-content-center fs-7 shadow-sm"></iconify-icon>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Get in touch Section End -->
+
+</div>
+<!-- Page Wrapper End -->
+
+
+<!-- =================================================================
+     FOOTER SECTION: Contains contact info, quick links, and social media.
+     ================================================================= -->
+<footer class="footer bg-dark py-5 py-lg-11 py-xl-12">
+    <div class="container">
+        <div class="row gy-5">
+
+            <!-- Column 1: Brand Info & Contact -->
+            <div class="col-lg-5 col-md-12">
+                <div class="d-flex flex-column gap-4 pe-xl-5">
+                    <h2 class="mb-0 text-white">Ready for Financial Freedom?</h2>
+                    <div class="d-flex flex-column gap-2">
+                        <a href="mailto:support@nasdigitalgrowth.com" class="link-hover hstack gap-3 text-white fs-5">
+                            <iconify-icon icon="lucide:mail" class="fs-7 text-primary"></iconify-icon> support@nasdigitalgrowth.com
+                        </a>
+                        <div class="hstack gap-3 text-white fs-5">
+                            <iconify-icon icon="lucide:map-pin" class="fs-7 text-primary"></iconify-icon> <span>Scotland, United Kingdom</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Column 2: Quick Links -->
+            <div class="col-lg-2 col-md-3 col-6">
+                <h5 class="mb-4 text-white">Quick Links</h5>
+                <ul class="footer-menu list-unstyled mb-0 d-flex flex-column gap-3">
+                    <li><a class="link-hover fs-6 text-white text-opacity-70" href="index.html">Home</a></li>
+                    <li><a class="link-hover fs-6 text-white text-opacity-70" href="program.html">The Program</a></li>
+                    <li><a class="link-hover fs-6 text-white text-opacity-70" href="https://www.nasdigitalgrowth.com/" target="_blank">Blueprint</a></li>
+                    <li><a class="link-hover fs-6 text-white text-opacity-70" href="pricing.html">Pricing</a></li>
+                    <li><a class="link-hover fs-6 text-white text-opacity-70" href="partners.html">Partners</a></li>
+                    <li><a class="link-hover fs-6 text-white text-opacity-70" href="about-us.html">About Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 3: Support & Legal Links -->
+            <div class="col-lg-2 col-md-3 col-6">
+                <h5 class="mb-4 text-white">Support</h5>
+                <ul class="footer-menu list-unstyled mb-0 d-flex flex-column gap-3">
+                    <li><a class="link-hover fs-6 text-white text-opacity-70" href="contact.html">Contact Us</a></li>
+                    <li><a class="link-hover fs-6 text-white text-opacity-70" href="terms-and-conditions.html">Terms & Conditions</a></li>
+                    <li><a class="link-hover fs-6 text-white text-opacity-70" href="privacy-policy.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 4: Social Media Icons -->
+            <div class="col-lg-3 col-md-6">
+                <h5 class="mb-4 text-white">Follow Us</h5>
+                <div class="d-flex gap-3">
+                    <a href="https://facebook.com/nasdigitalgrowth" target="_blank" class="text-white text-opacity-70 link-hover"><iconify-icon icon="ri:facebook-fill" class="fs-5"></iconify-icon></a>
+                    <a href="https://instagram.com/nasdigitalgrowth" target="_blank" class="text-white text-opacity-70 link-hover"><iconify-icon icon="ri:instagram-line" class="fs-5"></iconify-icon></a>
+                    <a href="https://tiktok.com/@nasdigitalgrowth" target="_blank" class="text-white text-opacity-70 link-hover"><iconify-icon icon="ri:tiktok-line" class="fs-5"></iconify-icon></a>
+                    <a href="https://youtube.com/@nasdigitalgrowth" target="_blank" class="text-white text-opacity-70 link-hover"><iconify-icon icon="ri:youtube-line" class="fs-5"></iconify-icon></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer Bottom Bar with Copyright -->
+    <div class="footer-bottom-bar border-top border-white border-opacity-10 mt-5 mt-lg-11 mt-xl-12 py-4">
+        <div class="container text-center">
+            <p class="mb-0 text-white text-opacity-70">© 2024 Nas Digital Growth. Empowering financial freedom through digital entrepreneurship.</p>
+        </div>
+    </div>
+</footer>
+<!-- Footer End -->
+
+
+<!-- =================================================================
+     FLOATING "SCROLL TO TOP" BUTTON
+     ================================================================= -->
+<div class="get-template hstack gap-2">
+  <button class="btn bg-primary p-2 round-52 rounded-circle hstack justify-content-center flex-shrink-0" id="scrollToTopBtn">
+    <iconify-icon icon="lucide:arrow-up" class="fs-7 text-dark"></iconify-icon>
+  </button>
+</div>
+
+
+<!-- =================================================================
+     JAVASCRIPT LIBRARIES & PLUGINS: Placed at the end for faster page load.
+     ================================================================= -->
+<!-- jQuery: A dependency for Bootstrap JS and other plugins. -->
+<script src="../assets/libs/jquery/dist/jquery.min.js"></script>
+<!-- Bootstrap JS Bundle: Includes Popper.js for tooltips and popovers. -->
+<script src="../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Owl Carousel JS: Powers the carousels/sliders. -->
+<script src="../assets/libs/owl.carousel/dist/owl.carousel.min.js"></script>
+<!-- AOS JS: Handles animations on scroll. -->
+<script src="../assets/libs/aos-master/dist/aos.js"></script>
+<!-- Custom JS: Your main script file for initializing plugins and custom behaviors. -->
+<script src="../assets/js/custom.js"></script>
+<!-- Iconify JS: Renders the custom vector icons. -->
+<script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+
+</body>
+
+</html>
