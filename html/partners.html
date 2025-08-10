@@ -119,15 +119,21 @@
   <div class="page-wrapper overflow-hidden">
 
     <!--  Banner Section -->
-    <section class="banner-section banner-inner-section position-relative overflow-hidden d-flex align-items-end"
-      style="background-image: url(../assets/images/backgrounds/projects-banner.jpg);">
+    <section class="banner-section banner-inner-section position-relative overflow-hidden d-flex align-items-center min-vh-100">
+      
+      <!-- Background Video -->
+      <video class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover" autoplay muted loop playsinline>
+        <source src="../assets/images/backgrounds/banner-video-partners.mp4" type="video/mp4" />
+      </video>
+
+      <!-- The rest of your content will appear as an overlay on top of the video -->
       <div class="container">
-        <div class="d-flex flex-column gap-4 pb-5 pb-xl-10 position-relative z-1">
+        <div class="d-flex flex-column gap-4 position-relative z-1">
           <div class="row align-items-center">
             <div class="col-xl-6">
               <div class="d-flex align-items-center gap-4" data-aos="fade-up" data-aos-delay="100"
                 data-aos-duration="1000">
-                <img src="../assets/images/svgs/primary-leaf.svg" alt="" class="img-fluid animate-spin">
+                <img src="../assets/images/svgs/primary-leaf.svg" alt="Nas Digital Growth Leaf Icon" class="img-fluid animate-spin">
                 <p class="mb-0 text-white fs-5 text-opacity-70">A showcase of <span class="text-primary">strategic partnerships</span> that expand opportunities and align with our vision for holistic growth.</p>
               </div>
             </div>
@@ -143,6 +149,91 @@
         </div>
       </div>
     </section>
+
+    <!-- ===============================================================
+     HOW WE WORK SECTION: Explains the four pillars of our partnership strategy.
+     =============================================================== -->
+    <section class="partnership-model-section py-5 py-lg-11 py-xl-12 bg-dark" id="partnership-model">
+        <div class="container">
+            <div class="d-flex flex-column gap-5 gap-xl-10">
+                <!-- Section Header -->
+                <div class="row gap-7 gap-xl-0">
+                    <div class="col-xl-4 col-xxl-4">
+                        <div class="d-flex align-items-center gap-7 py-2" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">
+                            <span class="round-36 flex-shrink-0 text-dark rounded-circle bg-primary hstack justify-content-center fw-medium">01</span>
+                            <hr class="border-line bg-white">
+                            <span class="badge text-dark bg-white">How We Collaborate</span>
+                        </div>
+                    </div>
+                    <div class="col-xl-8 col-xxl-7">
+                        <div class="row">
+                            <div class="col-xxl-8">
+                                <div class="d-flex flex-column gap-6" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+                                    <h2 class="mb-0 text-white">Building a Stronger Ecosystem Together</h2>
+                                    <p class="fs-5 mb-0 text-white text-opacity-70">We believe in partnerships that create real value for our community. Here’s our four-step approach to successful collaboration.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Partnership Steps Cards Row -->
+                <div class="row">
+                    <!-- Step 1: Strategic Alignment -->
+                    <div class="col-md-6 col-lg-3 mb-7 mb-lg-0 d-flex align-items-stretch">
+                      <div class="card h-100 bg-white bg-opacity-10 border-0" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card-body p-7 d-flex flex-column gap-5">
+                          <iconify-icon icon="solar:target-bold-duotone" class="fs-14 text-primary"></iconify-icon>
+                          <div class="d-flex flex-column gap-3">
+                            <h4 class="text-white">Strategic Alignment</h4>
+                            <p class="text-white text-opacity-70 mb-0">We identify partners whose products align with our mission of empowering our members. It all starts with shared values and a common vision.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Step 2: Seamless Integration -->
+                    <div class="col-md-6 col-lg-3 mb-7 mb-lg-0 d-flex align-items-stretch">
+                      <div class="card h-100 bg-white bg-opacity-10 border-0" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card-body p-7 d-flex flex-column gap-5">
+                          <iconify-icon icon="solar:link-round-angle-bold-duotone" class="fs-14 text-primary"></iconify-icon>
+                          <div class="d-flex flex-column gap-3">
+                            <h4 class="text-white">Seamless Integration</h4>
+                            <p class="text-white text-opacity-70 mb-0">We work to integrate our partners' offerings into our ecosystem, providing easy access to new tools and affiliate opportunities for our members.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Step 3: Collaborative Promotion -->
+                    <div class="col-md-6 col-lg-3 mb-7 mb-lg-0 d-flex align-items-stretch">
+                    <div class="card h-100 bg-white bg-opacity-10 border-0" data-aos="fade-up" data-aos-delay="300">
+                        <div class="card-body p-7 d-flex flex-column gap-5">
+                          <iconify-icon icon="solar:presentation-graph-bold-duotone" class="fs-14 text-primary"></iconify-icon>
+                          <div class="d-flex flex-column gap-3">
+                            <h4 class="text-white">Collaborative Promotion</h4>
+                            <p class="text-white text-opacity-70 mb-0">We engage in joint marketing efforts, from co-branded content to webinars, to inform our community about valuable new resources.</p>
+                          </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <!-- Step 4: Shared Success & Growth -->
+                    <div class="col-md-6 col-lg-3 mb-7 mb-lg-0 d-flex align-items-stretch">
+                    <div class="card h-100 bg-white bg-opacity-10 border-0" data-aos="fade-up" data-aos-delay="400">
+                        <div class="card-body p-7 d-flex flex-column gap-5">
+                          <iconify-icon icon="solar:graph-up-bold-duotone" class="fs-14 text-primary"></iconify-icon>
+                          <div class="d-flex flex-column gap-3">
+                            <h4 class="text-white">Shared Success & Growth</h4>
+                            <p class="text-white text-opacity-70 mb-0">Our partnerships are built for mutual benefit. Partners gain exposure, and our members gain powerful tools to accelerate their success.</p>
+                          </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- How We Work Section End -->
 
     <!--  Partners Section -->
     <section id="partner-grid" class="project py-5 py-lg-11 py-xl-12">
